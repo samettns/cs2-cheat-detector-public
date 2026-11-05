@@ -1,0 +1,128 @@
+{
+ "version": "v1",
+ "definitions": "notes/tasarim-kararlari.md K3; notes/karar-gunlugu.md D26-D27",
+ "oof_protocol": "pooled 160 pairs, pair GroupKFold 5x10, repeat-mean (= freeze.py)",
+ "consistency_check": "OOF kill scores aggregated (mean, >=3 kills) == models/v1/clean_reference.parquet: exact",
+ "event_quantile": 0.95,
+ "event_threshold": {
+  "sniper ağırlıklı": 0.9123322887487193,
+  "otomatik ağırlıklı": 0.5548833274871277,
+  "diğer": 0.7945572227779557
+ },
+ "event_threshold_global": 0.8474938879687046,
+ "event_reference_n": {
+  "sniper ağırlıklı": 2408,
+  "otomatik ağırlıklı": 11915,
+  "diğer": 3549
+ },
+ "kill_direction": {
+  "otomatik": {
+   "speed_mean": -1,
+   "speed_max": -1,
+   "speed_last_mean": -1,
+   "jitter": -1,
+   "still_ratio": 1,
+   "pitch_range_last": -1,
+   "shots": -1,
+   "after_move": -1,
+   "inv_angle_med": -1,
+   "inv_frac_lt10": 1,
+   "prefov_angle": -1,
+   "reaction_ms": -1
+  },
+  "tabanca": {
+   "speed_mean": -1,
+   "speed_max": 1,
+   "speed_last_mean": -1,
+   "jitter": -1,
+   "still_ratio": 1,
+   "pitch_range_last": -1,
+   "shots": -1,
+   "after_move": 1,
+   "inv_angle_med": -1,
+   "inv_frac_lt10": 1,
+   "prefov_angle": -1,
+   "reaction_ms": -1
+  },
+  "sniper": {
+   "speed_mean": 1,
+   "speed_max": 1,
+   "speed_last_mean": 1,
+   "jitter": 1,
+   "still_ratio": 1,
+   "pitch_range_last": 1,
+   "shots": -1,
+   "after_move": -1,
+   "inv_angle_med": -1,
+   "inv_frac_lt10": 1,
+   "prefov_angle": -1,
+   "reaction_ms": -1
+  }
+ },
+ "player_direction": {
+  "sniper ağırlıklı": {
+   "speed_mean": 1,
+   "speed_max": 1,
+   "speed_last_mean": 1,
+   "jitter": 1,
+   "still_ratio": 1,
+   "pitch_range_last": 1,
+   "shots": -1,
+   "after_move": 1,
+   "inv_angle_med": -1,
+   "inv_frac_lt10": 1,
+   "prefov_angle": -1,
+   "reaction_ms": -1
+  },
+  "otomatik ağırlıklı": {
+   "speed_mean": -1,
+   "speed_max": -1,
+   "speed_last_mean": -1,
+   "jitter": -1,
+   "still_ratio": 1,
+   "pitch_range_last": -1,
+   "shots": -1,
+   "after_move": -1,
+   "inv_angle_med": -1,
+   "inv_frac_lt10": 1,
+   "prefov_angle": -1,
+   "reaction_ms": -1
+  },
+  "diğer": {
+   "speed_mean": -1,
+   "speed_max": -1,
+   "speed_last_mean": -1,
+   "jitter": -1,
+   "still_ratio": 1,
+   "pitch_range_last": -1,
+   "shots": -1,
+   "after_move": -1,
+   "inv_angle_med": -1,
+   "inv_frac_lt10": 1,
+   "prefov_angle": -1,
+   "reaction_ms": -1
+  }
+ },
+ "explain_features": [
+  "speed_mean",
+  "speed_max",
+  "speed_last_mean",
+  "jitter",
+  "still_ratio",
+  "pitch_range_last",
+  "shots",
+  "after_move",
+  "inv_angle_med",
+  "inv_frac_lt10",
+  "prefov_angle",
+  "reaction_ms"
+ ],
+ "min_kills": 3,
+ "sources": {
+  "model_B.joblib": "3428ada24f9e31434f4fc0b519b1199e6f41e50f901e4f8e8d3cca507f1441c1",
+  "features.json": "152a0d1da1ac6473569a7fab7ee3f0b57fd6174c666c524dd55bd558631bc1f0",
+  "thresholds.json": "f0450ba505c06134eea3c6a6d98e8a2a69ee269c3a8d4960b087c63bfb1a6830",
+  "clean_reference.parquet": "d143ad6a9611ec65b00baa35298c30d859a0d776f58d34d2209a473248acedeb",
+  "kill_features.parquet": "ac3b6f279c353649521f2eb43a2a9c67ac6923eac43fbe1b9885abd1808ab2ad"
+ }
+}

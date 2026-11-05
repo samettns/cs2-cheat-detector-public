@@ -1,0 +1,17 @@
+pandas
+polars
+pyarrow
+matplotlib
+huggingface_hub
+jupyter
+ipykernel
+scikit-learn
+scipy
+requests
+pytest
+awpy
+psutil
+streamlit
+plotly
+playwright
+jinja2

@@ -1,0 +1,107 @@
+{
+ "version": "v1",
+ "rule": "MODEL_CARD.md",
+ "decision": "",
+ "universe": "CS2CD temiz eğitim maçları: data/pairs.csv + data/pairs_new.csv `clean` (Model v1 havuzu)",
+ "inner_pct": [
+  2.5,
+  97.5
+ ],
+ "outer_pct": [
+  0.5,
+  99.5
+ ],
+ "min_reaction_kills": 20,
+ "metrics": {
+  "aim_p99": {
+   "n": 160,
+   "inner": [
+    3.897,
+    8.399
+   ],
+   "outer": [
+    3.1,
+    8.759
+   ],
+   "median": 6.605,
+   "min": 3.067,
+   "max": 8.857
+  },
+  "reaction_med": {
+   "n": 128,
+   "inner": [
+    381.843,
+    693.935
+   ],
+   "outer": [
+    257.71,
+    714.524
+   ],
+   "median": 558.6,
+   "min": 203.1,
+   "max": 734.4
+  }
+ },
+ "by_map_diagnostic": {
+  "de_mirage": {
+   "aim_p99": {
+    "n": 37,
+    "inner": [
+     5.422,
+     8.669
+    ],
+    "outer": [
+     4.942,
+     8.819
+    ],
+    "median": 6.895,
+    "min": 4.822,
+    "max": 8.857
+   },
+   "reaction_med": {
+    "n": 32,
+    "inner": [
+     498.245,
+     703.1
+    ],
+    "outer": [
+     493.409,
+     703.1
+    ],
+    "median": 578.1,
+    "min": 492.2,
+    "max": 703.1
+   }
+  },
+  "de_dust2": {
+   "aim_p99": {
+    "n": 35,
+    "inner": [
+     5.074,
+     7.657
+    ],
+    "outer": [
+     4.916,
+     8.28
+    ],
+    "median": 6.385,
+    "min": 4.876,
+    "max": 8.436
+   },
+   "reaction_med": {
+    "n": 30,
+    "inner": [
+     497.075,
+     660.518
+    ],
+    "outer": [
+     474.455,
+     669.624
+    ],
+    "median": 570.3,
+    "min": 468.8,
+    "max": 671.9
+   }
+  }
+ }
+}

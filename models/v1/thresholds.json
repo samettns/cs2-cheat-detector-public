@@ -1,0 +1,22 @@
+{
+  "target_clean_fpr": 0.05,
+  "source": "pooled 160 pairs OOF (pair GroupKFold 5x10), clean players",
+  "G0": 0.7385140746884008,
+  "G1": {
+    "sniper ağırlıklı": 0.8631761260726236,
+    "otomatik ağırlıklı": 0.35945428080696035,
+    "diğer": 0.6690524620493183
+  },
+  "G1_reference_n": {
+    "sniper ağırlıklı": 164,
+    "otomatik ağırlıklı": 920,
+    "diğer": 310
+  },
+  "G1_fallback": {
+    "sniper ağırlıklı": false,
+    "otomatik ağırlıklı": false,
+    "diğer": false
+  },
+  "min_clean_for_style": 40,
+  "default_decision": "G1 (stil içi yüzdelik), notes/tasarim-kararlari.md K1"
+}

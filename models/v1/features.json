@@ -1,0 +1,50 @@
+{
+  "version": "v1",
+  "features": [
+    "speed_mean",
+    "speed_max",
+    "speed_last_mean",
+    "jitter",
+    "still_ratio",
+    "pitch_range_last",
+    "shots",
+    "after_move",
+    "is_sniper",
+    "is_pistol",
+    "inv_angle_med",
+    "inv_frac_lt10",
+    "prefov_angle",
+    "wallbang",
+    "reaction_ms"
+  ],
+  "model": "HistGradientBoostingClassifier",
+  "hyperparameters": {
+    "class_weight": "balanced",
+    "learning_rate": 0.05,
+    "max_depth": 3,
+    "max_iter": 200,
+    "random_state": 0
+  },
+  "sklearn_version": "1.9.1",
+  "training_data": {
+    "pairs_files": [
+      "data/pairs.csv",
+      "data/pairs_new.csv"
+    ],
+    "pairs": 160,
+    "matches": 320,
+    "kills": 27889,
+    "players_min3": 1960
+  },
+  "player_score": "mean of kill probabilities, players with >= 3 kills",
+  "style_definition": {
+    "share_threshold": 0.5,
+    "styles": [
+      "sniper ağırlıklı",
+      "otomatik ağırlıklı",
+      "diğer"
+    ],
+    "rule": "> share sniper kills -> sniper ağırlıklı; > share otomatik -> otomatik ağırlıklı; else diğer"
+  },
+  "nan_policy": "native NaN (no imputation)"
+}

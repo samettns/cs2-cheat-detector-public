@@ -1,0 +1,23 @@
+{
+ "mode": "cs2cd_oof",
+ "mode_note": "Eğitim veri havuzundan — Out-of-Fold / çapraz doğrulama skoru",
+ "match": "no_cheater_present/146",
+ "map": "de_inferno",
+ "training_pool": true,
+ "disclaimer": "Bu skor kalibre edilmiş hile olasılığı değildir.",
+ "event_note": "Olay düzeyi skorlar ayrıca doğrulanmadı: model oyuncu etiketleriyle eğitildi; tek tek öldürme skorları 'inceleme noktası' olarak kullanılabilir, 'hile anı kanıtı' olarak değil.",
+ "oof_protocol": "havuzlu 160 çift, çift GroupKFold 5x10, tekrar-ortalama (freeze.py ile aynı)",
+ "players_scored": 10,
+ "players_not_evaluated": [],
+ "kills_scored": 144,
+ "model_identity": {
+  "models/v1/model_B.joblib": "3428ada24f9e31434f4fc0b519b1199e6f41e50f901e4f8e8d3cca507f1441c1",
+  "models/v1/features.json": "152a0d1da1ac6473569a7fab7ee3f0b57fd6174c666c524dd55bd558631bc1f0",
+  "models/v1/thresholds.json": "f0450ba505c06134eea3c6a6d98e8a2a69ee269c3a8d4960b087c63bfb1a6830",
+  "models/v1/clean_reference.parquet": "d143ad6a9611ec65b00baa35298c30d859a0d776f58d34d2209a473248acedeb",
+  "data/reference/v1/reference.json": "eba4fe00894158b2f5c1b85d7af89a108730c5455128e5b63825281bb913bd37",
+  "data/reference/v1/kill_oof_clean.parquet": "c49f3478badc1939a7038fe37bff721330ecb73d2bf2b33718abe8b5e9f9b169",
+  "data/reference/v1/clean_kill_features.parquet": "bcf50f0cce4ae622d0346d8a871b6b8b03eef9eb6e200abd8afae623296e07e0",
+  "data/reference/v1/clean_player_features.parquet": "77c19c9184f5b47448850bfaa956a043294bbd70e37512805dc92cacf79af052"
+ }
+}

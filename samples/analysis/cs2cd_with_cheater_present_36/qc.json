@@ -1,0 +1,121 @@
+{
+ "demo_id": "cs2cd_with_cheater_present_36",
+ "source": "cs2cd",
+ "map": "de_mirage",
+ "map_supported": true,
+ "patch_version": null,
+ "demo_format": null,
+ "tickrate": 64.0,
+ "tick_gaps": [
+  [
+   1,
+   151766
+  ],
+  [
+   2,
+   24
+  ],
+  [
+   3,
+   13
+  ]
+ ],
+ "minutes": 39.5,
+ "rounds": 30,
+ "match_start_tick": 2799,
+ "n_players": 10,
+ "players_per_team": [
+  [
+   2.0,
+   4.0,
+   5
+  ],
+  [
+   3.0,
+   5.0,
+   5
+  ]
+ ],
+ "deaths_total": 156,
+ "kills_pre_match": 0,
+ "kills_aim_features": 151,
+ "kills_pre_match_aim": 0,
+ "kills_model": 151,
+ "players_in_model": 7,
+ "teamkills": 0,
+ "feature_order": [
+  "speed_mean",
+  "speed_max",
+  "speed_last_mean",
+  "jitter",
+  "still_ratio",
+  "pitch_range_last",
+  "shots",
+  "after_move",
+  "is_sniper",
+  "is_pistol",
+  "inv_angle_med",
+  "inv_frac_lt10",
+  "prefov_angle",
+  "wallbang",
+  "reaction_ms"
+ ],
+ "feature_nonnull": {
+  "speed_mean": 1.0,
+  "speed_max": 1.0,
+  "speed_last_mean": 1.0,
+  "jitter": 1.0,
+  "still_ratio": 1.0,
+  "pitch_range_last": 1.0,
+  "shots": 1.0,
+  "after_move": 1.0,
+  "is_sniper": 1.0,
+  "is_pistol": 1.0,
+  "inv_angle_med": 1.0,
+  "inv_frac_lt10": 1.0,
+  "prefov_angle": 0.278,
+  "wallbang": 1.0,
+  "reaction_ms": 0.278
+ },
+ "feature_nan_rate": {
+  "speed_mean": 0.0,
+  "speed_max": 0.0,
+  "speed_last_mean": 0.0,
+  "jitter": 0.0,
+  "still_ratio": 0.0,
+  "pitch_range_last": 0.0,
+  "shots": 0.0,
+  "after_move": 0.0,
+  "is_sniper": 0.0,
+  "is_pistol": 0.0,
+  "inv_angle_med": 0.0,
+  "inv_frac_lt10": 0.0,
+  "prefov_angle": 0.722,
+  "wallbang": 0.0,
+  "reaction_ms": 0.722
+ },
+ "visibility_computable": true,
+ "raycast": {
+  "proxy": {
+   "nonpen_n": 27,
+   "nonpen_visible": 0.704
+  },
+  "bullet_damage": {
+   "nonpen_n": 41,
+   "nonpen_visible": 0.902,
+   "pen_n": 160,
+   "pen_visible": 0.181
+  }
+ },
+ "raycast_note": "Yedek ölçüt (öldürmeden önceki son örnek anda kurban görünür mü; delmeyen + dumansız öldürmeler) eski bullet_damage ölçütüyle (her delmeyen isabet, isabet anında) doğrudan eşdeğer DEĞİLDİR.",
+ "aim_step_p99": 4.86,
+ "knife_skin_kills_total": 0,
+ "knife_skin_kills_model": 0,
+ "knife_note": "v1 bilinen hatası: bıçak skinleri (knife_*) nişan gerektirmeyen silah listesinde yok → 'otomatik' sınıfına düşer; CS2CD eğitiminde de aynıydı. Model v1 donuk olduğu için düzeltilmedi.",
+ "positions_out_of_bounds": 0,
+ "warnings": [
+  "takım başına anlık oyuncu medyanı [(2.0, 4.0, 5), (3.0, 5.0, 5)] (beklenen 5)"
+ ],
+ "model_v1_applicable": true,
+ "model_v1_reasons": []
+}

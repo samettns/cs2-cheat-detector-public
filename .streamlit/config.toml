@@ -1,0 +1,17 @@
+# Faz 3 arayüzü: koyu tema. Yalnız görünüm; model/skor mantığını etkilemez.
+[theme]
+base = "dark"
+primaryColor = "#ffd400"   # sarı = seçili olay / tick (renk dili)
+backgroundColor = "#0b0f14"
+secondaryBackgroundColor = "#151b23"
+textColor = "#e6edf3"
+font = "sans serif"
+
+[server]
+maxUploadSize = 1024   # MB (~1 GB); upload_flow.MAX_BYTES ile aynı
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false

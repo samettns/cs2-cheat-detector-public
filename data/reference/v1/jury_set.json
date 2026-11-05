@@ -1,0 +1,34 @@
+{
+ "rule_version": "v1 (2026-10-07)",
+ "seed": 2026,
+ "pool_pairs": 115,
+ "examples": [
+  {
+   "role": "dogrulanmis_pozitif",
+   "label": "Doğrulanmış pozitif etiketli örnek (CS2CD hileli maç)",
+   "match": "with_cheater_present/36",
+   "pair": 109,
+   "map": "de_mirage"
+  },
+  {
+   "role": "hilecisiz",
+   "label": "Hilecisiz veri setinden örnek",
+   "match": "no_cheater_present/146",
+   "pair": 44,
+   "map": "de_inferno"
+  },
+  {
+   "role": "yanlis_alarm",
+   "label": "Bilinen başarısızlık / yanlış alarm örneği",
+   "note": "Bilinen sınırlılık: sniper ağırlıklı oyuncularda yanlış alarm riski.",
+   "match": "no_cheater_present/95",
+   "pair": 117,
+   "map": "cs_office",
+   "threshold_rule": "G1",
+   "candidate_matches": 3,
+   "flagged_players": [
+    "Player_4"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+#!/bin/sh
+# Gizlilik kancası: gerçek oyuncu kimlikleri veya demo dosyaları git'e girmesin.
+# Kurulum (bir kez): git config core.hooksPath .githooks
+fail=0
+
+# 1) Demo / kimlik eşleme dosyaları asla commit'lenmez
+if git diff --cached --name-only | grep -E '\.dem$|\.ids\.json$' >/dev/null; then
+    echo "pre-commit: .dem veya .ids.json dosyası commit'e eklenemez (gerçek kimlik içerir)."
+    fail=1
+fi
+
+# 2) Eklenen satırlarda Steam ID (SteamID64: 7656119 + 10 hane) deseni
+if git diff --cached -U0 --no-color | grep -E '^\+' | grep -E '7656119[0-9]{10}' >/dev/null; then
+    echo "pre-commit: eklenen satırlarda Steam ID deseni bulundu; commit engellendi."
+    fail=1
+fi
+
+# 3) Gizlilik testi (dönüştürülmüş demolar ve raporlar anonim mi?)
+PY=".venv/Scripts/python.exe"
+[ -x "$PY" ] || PY=".venv/bin/python"
+if ! PYTHONIOENCODING=utf-8 "$PY" -m pytest tests/test_demo_privacy.py -q -p no:cacheprovider >/tmp/precommit_privacy.log 2>&1; then
+    echo "pre-commit: gizlilik testi BAŞARISIZ — commit engellendi:"
+    grep -E "FAILED|Error|assert" /tmp/precommit_privacy.log | head -5
+    fail=1
+fi
+
+[ $fail -eq 0 ] || exit 1
+echo "pre-commit: gizlilik kontrolleri geçti."

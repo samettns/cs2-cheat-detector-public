@@ -1,0 +1,34 @@
+# Sanal ortam
+.venv/
+
+# Veri (çok büyük, git'e girmez)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Harita geometrisi ve radar görselleri (Valve dosyalarından yerelde üretilir, dağıtılmaz)
+data/maps/
+
+# Kullanıcı demoları ve analiz çıktıları (anonim takma ad içerir ama paylaşılmaz)
+*.dem
+*.ids.json
+reports/analysis/
+reports/exports/
+
+# Python / Jupyter artıkları
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Hugging Face önbelleği
+.cache/
+
+# Editör / araç / işletim sistemi artıkları
+.claude/
+.vscode/
+.idea/
+~$*
+Thumbs.db
+.DS_Store

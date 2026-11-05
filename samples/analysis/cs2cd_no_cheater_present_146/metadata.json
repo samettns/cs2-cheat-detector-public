@@ -1,0 +1,217 @@
+{
+ "demo_id": "cs2cd_no_cheater_present_146",
+ "pipeline_version": "faz1-v1",
+ "git_commit": "ebb9623",
+ "source": "cs2cd",
+ "map": "de_inferno",
+ "patch_version": null,
+ "demo_format": null,
+ "tickrate": 64.0,
+ "minutes": 33.7,
+ "rounds": 21,
+ "rounds_table": [
+  {
+   "round": 1,
+   "start_tick": 72,
+   "end_tick": 4696,
+   "live_start_tick": 1768,
+   "live_end_tick": 4248
+  },
+  {
+   "round": 2,
+   "start_tick": 4712,
+   "end_tick": 9160,
+   "live_start_tick": 5984,
+   "live_end_tick": 8712
+  },
+  {
+   "round": 3,
+   "start_tick": 9168,
+   "end_tick": 19952,
+   "live_start_tick": 13736,
+   "live_end_tick": 19504
+  },
+  {
+   "round": 4,
+   "start_tick": 19968,
+   "end_tick": 25704,
+   "live_start_tick": 21240,
+   "live_end_tick": 25256
+  },
+  {
+   "round": 5,
+   "start_tick": 25720,
+   "end_tick": 32424,
+   "live_start_tick": 26992,
+   "live_end_tick": 31976
+  },
+  {
+   "round": 6,
+   "start_tick": 32440,
+   "end_tick": 35928,
+   "live_start_tick": 33712,
+   "live_end_tick": 35480
+  },
+  {
+   "round": 7,
+   "start_tick": 35944,
+   "end_tick": 43016,
+   "live_start_tick": 37216,
+   "live_end_tick": 42568
+  },
+  {
+   "round": 8,
+   "start_tick": 43032,
+   "end_tick": 48616,
+   "live_start_tick": 44304,
+   "live_end_tick": 48168
+  },
+  {
+   "round": 9,
+   "start_tick": 48624,
+   "end_tick": 56264,
+   "live_start_tick": 49904,
+   "live_end_tick": 55816
+  },
+  {
+   "round": 10,
+   "start_tick": 56280,
+   "end_tick": 60664,
+   "live_start_tick": 57552,
+   "live_end_tick": 60216
+  },
+  {
+   "round": 11,
+   "start_tick": 60680,
+   "end_tick": 66024,
+   "live_start_tick": 61952,
+   "live_end_tick": 65576
+  },
+  {
+   "round": 12,
+   "start_tick": 66040,
+   "end_tick": 72240,
+   "live_start_tick": 67312,
+   "live_end_tick": 71696
+  },
+  {
+   "round": 13,
+   "start_tick": 72256,
+   "end_tick": 78120,
+   "live_start_tick": 73944,
+   "live_end_tick": 77672
+  },
+  {
+   "round": 14,
+   "start_tick": 78136,
+   "end_tick": 83752,
+   "live_start_tick": 79408,
+   "live_end_tick": 83304
+  },
+  {
+   "round": 15,
+   "start_tick": 83768,
+   "end_tick": 87656,
+   "live_start_tick": 85040,
+   "live_end_tick": 87208
+  },
+  {
+   "round": 16,
+   "start_tick": 87664,
+   "end_tick": 94600,
+   "live_start_tick": 88944,
+   "live_end_tick": 94152
+  },
+  {
+   "round": 17,
+   "start_tick": 94616,
+   "end_tick": 102664,
+   "live_start_tick": 95888,
+   "live_end_tick": 102216
+  },
+  {
+   "round": 18,
+   "start_tick": 102680,
+   "end_tick": 107648,
+   "live_start_tick": 103952,
+   "live_end_tick": 107200
+  },
+  {
+   "round": 19,
+   "start_tick": 107656,
+   "end_tick": 113520,
+   "live_start_tick": 108936,
+   "live_end_tick": 113072
+  },
+  {
+   "round": 20,
+   "start_tick": 113528,
+   "end_tick": 120904,
+   "live_start_tick": 114808,
+   "live_end_tick": 120456
+  },
+  {
+   "round": 21,
+   "start_tick": 120920,
+   "end_tick": 128352,
+   "live_start_tick": 122192,
+   "live_end_tick": 128352
+  },
+  {
+   "round": 22,
+   "start_tick": 128360,
+   "end_tick": 129632,
+   "live_start_tick": null,
+   "live_end_tick": null
+  }
+ ],
+ "match_start_tick": 2586,
+ "n_players": 10,
+ "kills_model": 144,
+ "feature_order": [
+  "speed_mean",
+  "speed_max",
+  "speed_last_mean",
+  "jitter",
+  "still_ratio",
+  "pitch_range_last",
+  "shots",
+  "after_move",
+  "is_sniper",
+  "is_pistol",
+  "inv_angle_med",
+  "inv_frac_lt10",
+  "prefov_angle",
+  "wallbang",
+  "reaction_ms"
+ ],
+ "model_v1_applicable": true,
+ "model_v1_reasons": [],
+ "context_sampling": {
+  "map_context_step_ticks": 8,
+  "kill_window_ticks": 128,
+  "kill_window_step_ticks": 2
+ },
+ "files": [
+  "features.parquet",
+  "kill_windows.parquet",
+  "kills.parquet",
+  "map_context.parquet",
+  "metadata.json",
+  "qc.json",
+  "qc.md",
+  "utility.parquet"
+ ],
+ "run": {
+  "seconds_total": 592.8,
+  "seconds_by_stage": {
+   "donusturme": 0.0,
+   "kontroller": 0.2,
+   "nisan": 0.2,
+   "gorunurluk": 588.2,
+   "baglam": 0.1,
+   "raycast_kontrol": 3.7
+  },
+  "peak_ram_mb": 5459.0
+ }
+}

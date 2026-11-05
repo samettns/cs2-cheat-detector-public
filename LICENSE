@@ -1,0 +1,45 @@
+MIT License
+
+Copyright (c) 2026 samettns
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------------
+Scope of this license
+
+The MIT License above applies to the source code in this repository
+(app/, src/, tests/, tools and configuration files) and to the documentation
+written for this project.
+
+It does NOT apply to the files derived from the CS2CD dataset:
+
+  data/pairs.csv, data/pairs_new.csv
+  data/reference/v1/
+  models/v1/
+  samples/analysis/
+
+Those files are shared under the Creative Commons Attribution 4.0
+International license (CC-BY-4.0), with attribution to the CS2CD dataset
+(https://huggingface.co/datasets/CS2CD/CS2CD.Counter-Strike_2_Cheat_Detection,
+doi:10.57967/hf/5654). See DATA_ATTRIBUTION.md for the per-file assessment,
+the attribution text and the description of changes.
+
+Counter-Strike 2 map geometry and radar images are Valve property; they are
+NOT included and are generated locally from the user's own game installation.
+This project is not affiliated with or endorsed by Valve Corporation.

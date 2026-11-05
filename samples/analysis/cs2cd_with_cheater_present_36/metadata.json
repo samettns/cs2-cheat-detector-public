@@ -1,0 +1,280 @@
+{
+ "demo_id": "cs2cd_with_cheater_present_36",
+ "pipeline_version": "faz1-v1",
+ "git_commit": "ebb9623",
+ "source": "cs2cd",
+ "map": "de_mirage",
+ "patch_version": null,
+ "demo_format": null,
+ "tickrate": 64.0,
+ "minutes": 39.5,
+ "rounds": 30,
+ "rounds_table": [
+  {
+   "round": 1,
+   "start_tick": 72,
+   "end_tick": 3512,
+   "live_start_tick": 1768,
+   "live_end_tick": 3064
+  },
+  {
+   "round": 2,
+   "start_tick": 3528,
+   "end_tick": 6872,
+   "live_start_tick": 4800,
+   "live_end_tick": 6424
+  },
+  {
+   "round": 3,
+   "start_tick": 6880,
+   "end_tick": 10104,
+   "live_start_tick": 8160,
+   "live_end_tick": 9656
+  },
+  {
+   "round": 4,
+   "start_tick": 10112,
+   "end_tick": 13952,
+   "live_start_tick": 11392,
+   "live_end_tick": 13504
+  },
+  {
+   "round": 5,
+   "start_tick": 13960,
+   "end_tick": 18840,
+   "live_start_tick": 15240,
+   "live_end_tick": 18392
+  },
+  {
+   "round": 6,
+   "start_tick": 18856,
+   "end_tick": 23720,
+   "live_start_tick": 20128,
+   "live_end_tick": 23272
+  },
+  {
+   "round": 7,
+   "start_tick": 23728,
+   "end_tick": 29112,
+   "live_start_tick": 25008,
+   "live_end_tick": 28664
+  },
+  {
+   "round": 8,
+   "start_tick": 29120,
+   "end_tick": 35760,
+   "live_start_tick": 32384,
+   "live_end_tick": 35312
+  },
+  {
+   "round": 9,
+   "start_tick": 35768,
+   "end_tick": 41560,
+   "live_start_tick": 39032,
+   "live_end_tick": 41112
+  },
+  {
+   "round": 10,
+   "start_tick": 41568,
+   "end_tick": 49336,
+   "live_start_tick": 45584,
+   "live_end_tick": 48888
+  },
+  {
+   "round": 11,
+   "start_tick": 49344,
+   "end_tick": 52768,
+   "live_start_tick": 50624,
+   "live_end_tick": 52320
+  },
+  {
+   "round": 12,
+   "start_tick": 52776,
+   "end_tick": 56928,
+   "live_start_tick": 54056,
+   "live_end_tick": 56384
+  },
+  {
+   "round": 13,
+   "start_tick": 56936,
+   "end_tick": 60464,
+   "live_start_tick": 58632,
+   "live_end_tick": 60016
+  },
+  {
+   "round": 14,
+   "start_tick": 60472,
+   "end_tick": 65824,
+   "live_start_tick": 61752,
+   "live_end_tick": 65376
+  },
+  {
+   "round": 15,
+   "start_tick": 65832,
+   "end_tick": 69368,
+   "live_start_tick": 67112,
+   "live_end_tick": 68920
+  },
+  {
+   "round": 16,
+   "start_tick": 69376,
+   "end_tick": 72080,
+   "live_start_tick": 70656,
+   "live_end_tick": 71632
+  },
+  {
+   "round": 17,
+   "start_tick": 72088,
+   "end_tick": 76184,
+   "live_start_tick": 73368,
+   "live_end_tick": 75736
+  },
+  {
+   "round": 18,
+   "start_tick": 76192,
+   "end_tick": 83768,
+   "live_start_tick": 77472,
+   "live_end_tick": 83320
+  },
+  {
+   "round": 19,
+   "start_tick": 83776,
+   "end_tick": 89128,
+   "live_start_tick": 85056,
+   "live_end_tick": 88680
+  },
+  {
+   "round": 20,
+   "start_tick": 89136,
+   "end_tick": 93912,
+   "live_start_tick": 90416,
+   "live_end_tick": 93464
+  },
+  {
+   "round": 21,
+   "start_tick": 93920,
+   "end_tick": 96872,
+   "live_start_tick": 95200,
+   "live_end_tick": 96424
+  },
+  {
+   "round": 22,
+   "start_tick": 96880,
+   "end_tick": 103784,
+   "live_start_tick": 98160,
+   "live_end_tick": 103336
+  },
+  {
+   "round": 23,
+   "start_tick": 103792,
+   "end_tick": 108400,
+   "live_start_tick": 105072,
+   "live_end_tick": 107952
+  },
+  {
+   "round": 24,
+   "start_tick": 108408,
+   "end_tick": 113264,
+   "live_start_tick": 109688,
+   "live_end_tick": 112720
+  },
+  {
+   "round": 25,
+   "start_tick": 113280,
+   "end_tick": 118304,
+   "live_start_tick": 114968,
+   "live_end_tick": 117856
+  },
+  {
+   "round": 26,
+   "start_tick": 118312,
+   "end_tick": 121968,
+   "live_start_tick": 119592,
+   "live_end_tick": 121520
+  },
+  {
+   "round": 27,
+   "start_tick": 121976,
+   "end_tick": 130488,
+   "live_start_tick": 123256,
+   "live_end_tick": 129944
+  },
+  {
+   "round": 28,
+   "start_tick": 130496,
+   "end_tick": 141488,
+   "live_start_tick": 138072,
+   "live_end_tick": 141040
+  },
+  {
+   "round": 29,
+   "start_tick": 141496,
+   "end_tick": 146048,
+   "live_start_tick": 144760,
+   "live_end_tick": 145600
+  },
+  {
+   "round": 30,
+   "start_tick": 146056,
+   "end_tick": 150576,
+   "live_start_tick": 147336,
+   "live_end_tick": 150576
+  },
+  {
+   "round": 31,
+   "start_tick": 150584,
+   "end_tick": 151856,
+   "live_start_tick": null,
+   "live_end_tick": null
+  }
+ ],
+ "match_start_tick": 2799,
+ "n_players": 10,
+ "kills_model": 151,
+ "feature_order": [
+  "speed_mean",
+  "speed_max",
+  "speed_last_mean",
+  "jitter",
+  "still_ratio",
+  "pitch_range_last",
+  "shots",
+  "after_move",
+  "is_sniper",
+  "is_pistol",
+  "inv_angle_med",
+  "inv_frac_lt10",
+  "prefov_angle",
+  "wallbang",
+  "reaction_ms"
+ ],
+ "model_v1_applicable": true,
+ "model_v1_reasons": [],
+ "context_sampling": {
+  "map_context_step_ticks": 8,
+  "kill_window_ticks": 128,
+  "kill_window_step_ticks": 2
+ },
+ "files": [
+  "features.parquet",
+  "kill_windows.parquet",
+  "kills.parquet",
+  "map_context.parquet",
+  "metadata.json",
+  "qc.json",
+  "qc.md",
+  "utility.parquet"
+ ],
+ "run": {
+  "seconds_total": 218.6,
+  "seconds_by_stage": {
+   "donusturme": 0.0,
+   "kontroller": 0.2,
+   "nisan": 0.3,
+   "gorunurluk": 215.8,
+   "baglam": 0.2,
+   "raycast_kontrol": 2.0
+  },
+  "peak_ram_mb": 1520.0
+ }
+}
